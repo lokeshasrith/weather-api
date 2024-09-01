@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <input type="text" autocomplete="off" class="search-input" placeholder="Enter city..." />
+    </header>
+    <main>
+      <section class="location-section">
+        <div class="city-name">City, Country</div>
+        <div class="current-date">Date</div>
+        <div class="current-time">Time</div>
+      </section>
+      <div class="weather-info">
+        <div class="weather-icon" id="weather-icon"></div>
+        <div class="temperature">--<span>°C</span></div>
+        <div class="weather-condition">Condition</div>
+        <div class="high-low-temp">--°C / --°C</div>
+      </div>
+      <div class="loading">Loading...</div>
+      <div class="error-message"></div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
